@@ -1,0 +1,431 @@
+{
+  "title": "The Whispering Snowglobe Wish",
+  "estimatedMinutes": 10,
+  "variables": {
+    "kindness": 0,
+    "bravery": 0,
+    "patience": 0
+  },
+  "startSceneId": "scene_001",
+  "scenes": [
+    {
+      "id": "scene_001",
+      "text": "You step into the living room and spot a snowglobe you’ve never seen before. Inside, tiny glittery snow swirls around a miniature mailbox with a red flag. When you pick it up, it gives a polite little “ding,” like it’s clearing its throat.",
+      "choices": [
+        {
+          "text": "Give the snowglobe a gentle shake and listen closely.",
+          "nextSceneId": "scene_002",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Hold it up to the light and investigate like a holiday detective.",
+          "nextSceneId": "scene_003",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_002",
+      "text": "The snow inside settles slowly, like it’s taking its time on purpose. A tiny paper slips out from under the base: “Hello {{playerName}}. I can send one wish to Santa, but I need help finding the right path.” The snowglobe adds a second “ding,” as if proud of its handwriting.",
+      "choices": [
+        {
+          "text": "Read the note aloud and promise to help.",
+          "nextSceneId": "scene_004",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Set the snowglobe down carefully and look for a clue nearby.",
+          "nextSceneId": "scene_005",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Ask the snowglobe politely how it works.",
+          "nextSceneId": "scene_006",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_003",
+      "text": "Under the lamp, you notice the snowglobe’s base has three tiny buttons: a heart, a star, and a little hourglass. When you press the star, it makes a confident “ding!” When you press the hourglass, it makes a slower “di—ing,” like it’s thinking.",
+      "choices": [
+        {
+          "text": "Press the heart button, just to be friendly.",
+          "nextSceneId": "scene_006",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Press the star button and see if it opens something.",
+          "nextSceneId": "scene_004",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Press the hourglass button and wait for whatever happens.",
+          "nextSceneId": "scene_005",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_004",
+      "text": "A soft glow spills from the snowglobe, and a tiny winter map appears on the table like it was always meant to be there. It shows three stops: the Cozy Kitchen, the Jingle Tree, and the Snowy Porch. The snowglobe “dings” in a way that feels like: Choose wisely, {{playerName}}.",
+      "choices": [
+        {
+          "text": "Head to the Cozy Kitchen for warm clues.",
+          "nextSceneId": "scene_007",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Go to the Jingle Tree where ornaments might hide secrets.",
+          "nextSceneId": "scene_008",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Step onto the Snowy Porch to check the mailbox outside.",
+          "nextSceneId": "scene_009",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_005",
+      "text": "You take a slow breath and let the room settle. The snowglobe seems to approve; the glitter inside drifts down in neat little layers. A faint whisper rises from it: “Patience makes wishes clearer.”",
+      "choices": [
+        {
+          "text": "Follow the whisper and look for the winter map.",
+          "nextSceneId": "scene_004",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Check the window for any unusual sparkle outside.",
+          "nextSceneId": "scene_009",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_006",
+      "text": "“Thank you,” the snowglobe seems to say—though it’s really just a cheerful “ding.” A tiny slot opens at the base like a miniature letter chute, and a blank wish card slides out. In neat print it reads: “Wish: {{playerWish}} (to be delivered when the path is complete).”",
+      "choices": [
+        {
+          "text": "Hold the card carefully and look for the winter map.",
+          "nextSceneId": "scene_004",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Tuck the card somewhere safe and head to the Cozy Kitchen.",
+          "nextSceneId": "scene_007",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_007",
+      "text": "The kitchen smells like something sweet and comforting, even if no one’s baking right now. On the counter sits a plate of cookies with a sticky note: “Quality control welcome. Please do not eat the note.” The snowglobe “dings” as if it finds that hilarious.",
+      "choices": [
+        {
+          "text": "Share a cookie with someone nearby or save one for later.",
+          "nextSceneId": "scene_010",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Examine the sticky note for a hidden clue.",
+          "nextSceneId": "scene_011",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Open a cabinet carefully—maybe the clue is tucked away.",
+          "nextSceneId": "scene_012",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_008",
+      "text": "The Jingle Tree twinkles softly, and its ornaments look extra curious tonight. One ornament is shaped like a tiny mailbox, which feels suspiciously relevant. Another is a little star that spins whenever you blink, as if it’s showing off.",
+      "choices": [
+        {
+          "text": "Gently inspect the mailbox ornament for a message.",
+          "nextSceneId": "scene_013",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Reach for the spinning star ornament even if it’s up high.",
+          "nextSceneId": "scene_012",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Adjust a drooping tinsel strand to help the tree look its best.",
+          "nextSceneId": "scene_010",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_009",
+      "text": "Outside, the porch is quiet and crisp, and the world feels wrapped in a soft winter hush. The mailbox stands there like it’s waiting for a secret handshake. A tiny snowdrift blocks the bottom, as if the snow is trying to be helpful but isn’t quite sure how.",
+      "choices": [
+        {
+          "text": "Clear the snow gently and check the mailbox.",
+          "nextSceneId": "scene_014",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Look around the porch for footprints or sparkles.",
+          "nextSceneId": "scene_015",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_010",
+      "text": "You do something small that makes things nicer—sharing, tidying, or simply thinking of others. The snowglobe gives a warm “ding,” like it’s wearing a scarf and smiling. The winter map flickers, and one route on it grows brighter.",
+      "choices": [
+        {
+          "text": "Follow the brighter route toward the Jingle Tree.",
+          "nextSceneId": "scene_013",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Follow the brighter route toward the Snowy Porch.",
+          "nextSceneId": "scene_014",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_011",
+      "text": "You peel back the sticky note carefully, and there’s a second message underneath: “The path has three virtues. Choose one when you’re unsure.” A tiny doodle shows a heart, a star, and an hourglass—drawn with surprising artistic confidence for a note that lives near cookies.",
+      "choices": [
+        {
+          "text": "Choose the heart path and look for someone who needs help.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Choose the star path and take on a tricky task.",
+          "nextSceneId": "scene_012",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Choose the hourglass path and slow down to notice details.",
+          "nextSceneId": "scene_014",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_012",
+      "text": "A small challenge appears, the kind that’s more awkward than scary: a tangled string of lights, a high ornament, or a jammed drawer that refuses to cooperate. The snowglobe “dings” like it’s offering moral support and absolutely not laughing. With a steady hand, you can fix it.",
+      "choices": [
+        {
+          "text": "Take a careful risk and solve it yourself.",
+          "nextSceneId": "scene_017",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Ask for help and make it a team effort.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Pause, breathe, and untangle it slowly.",
+          "nextSceneId": "scene_017",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_013",
+      "text": "The mailbox ornament clicks open with a tiny, dramatic flourish. Inside is a rolled ribbon that reads: “Delivery requires a clear wish card and a clear heart.” It also contains a single glitter flake that refuses to stop sparkling, like it’s trying to be the main character.",
+      "choices": [
+        {
+          "text": "Return to the snowglobe and make sure the wish card is safe.",
+          "nextSceneId": "scene_018",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Follow the ribbon’s hint and do one more kind act.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_014",
+      "text": "You open the mailbox and find a tiny envelope labeled: “For {{playerName}}.” Inside is a map sticker shaped like a sleigh, plus a note: “The final step is the Sparkle Switch—flip it only when you’re ready.” The snowglobe “dings” softly, as if it also wants you to be ready.",
+      "choices": [
+        {
+          "text": "Take the sticker and head back inside to find the Sparkle Switch.",
+          "nextSceneId": "scene_019",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Stay a moment longer and make sure you didn’t miss anything.",
+          "nextSceneId": "scene_015",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Wave at the quiet night like you’re greeting winter itself.",
+          "nextSceneId": "scene_018",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_015",
+      "text": "You look carefully and notice a line of tiny sparkles leading from the porch back toward the living room. They’re not footprints exactly—more like someone sprinkled glitter and then tried to apologize by arranging it neatly. The trail seems to say: This way, but politely.",
+      "choices": [
+        {
+          "text": "Follow the sparkle trail back inside.",
+          "nextSceneId": "scene_019",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Brush away stray glitter so nobody slips or tracks it everywhere.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_016",
+      "text": "You lend a hand, share a smile, or solve a small problem that makes someone’s day easier. The snowglobe gives a proud “ding” that sounds like a tiny applause. The wish card in your pocket feels warmer, like it’s becoming more real.",
+      "choices": [
+        {
+          "text": "Head toward the living room to look for the Sparkle Switch.",
+          "nextSceneId": "scene_019",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Double-check that the wish card still reads {{playerWish}} clearly.",
+          "nextSceneId": "scene_018",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_017",
+      "text": "The tricky task finally gives in, like it knows you mean business. The lights straighten, the ornament settles, or the drawer opens with an exaggerated squeak that sounds like it’s saying, “Fine, you win.” The snowglobe “dings” twice, as if awarding you a very small trophy.",
+      "choices": [
+        {
+          "text": "Take your success and head toward the Sparkle Switch.",
+          "nextSceneId": "scene_019",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Celebrate quietly and help make sure everything is safe and tidy.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_018",
+      "text": "You hold the wish card up and read it again: “{{playerWish}}.” For a moment, the snowglobe’s glitter swirls into a tiny shape that looks suspiciously like a thumbs-up. Whatever happens next, it feels important that the wish belongs to you, {{playerName}}, and that you mean it.",
+      "choices": [
+        {
+          "text": "Take a steady breath and head for the Sparkle Switch.",
+          "nextSceneId": "scene_019",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Think of one more kind thing to do before finishing.",
+          "nextSceneId": "scene_016",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_019",
+      "text": "Back in the living room, you spot a tiny lever hidden behind a framed winter picture: the Sparkle Switch. The snowglobe “dings” in a serious, ceremonial way, like it’s about to announce a very important cookie award. This is the moment to send {{playerWish}} to Santa—when you’re ready.",
+      "choices": [
+        {
+          "text": "Flip the Sparkle Switch confidently.",
+          "nextSceneId": "scene_020",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        },
+        {
+          "text": "Flip it gently and think of everyone who helped you along the way.",
+          "nextSceneId": "scene_020",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Wait a heartbeat longer to be absolutely sure, then flip it.",
+          "nextSceneId": "scene_020",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        }
+      ]
+    },
+    {
+      "id": "scene_020",
+      "text": "The snowglobe brightens, and the tiny mailbox inside raises its red flag all by itself. A whispery whoosh fills the room, like a letter being sealed with extra glitter—just in case. The wish card shimmers once, as if it’s saying, “Message ready, {{playerName}}.”",
+      "choices": [
+        {
+          "text": "Place the wish card into the snowglobe’s letter chute.",
+          "nextSceneId": "scene_021",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Hold the card a moment and add a quiet note of gratitude.",
+          "nextSceneId": "scene_021",
+          "effects": { "kindness": 1, "bravery": 0, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_021",
+      "text": "As the card slides in, the snow inside the globe swirls into a perfect little spiral, then settles like a cozy blanket. A final “ding” rings out—warm, satisfied, and slightly smug, like a snowglobe that knows it did a good job. You feel the moment land: your wish is truly on its way.",
+      "choices": [
+        {
+          "text": "Watch the snow settle and reflect on the night’s small victories.",
+          "nextSceneId": "scene_022",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 1 }
+        },
+        {
+          "text": "Give the snowglobe a grateful nod and check if the map changed.",
+          "nextSceneId": "scene_022",
+          "effects": { "kindness": 0, "bravery": 1, "patience": 0 }
+        }
+      ]
+    },
+    {
+      "id": "scene_022",
+      "text": "The winter map fades away, replaced by a small, glowing stamp that reads: “DELIVERED.” The snowglobe feels pleasantly warm in your hands, as if it’s just come back from a very short, very efficient journey. Whatever happens next, it feels like you’ve done something quietly wonderful.",
+      "choices": [
+        {
+          "text": "Finish the adventure and see what ending your choices created.",
+          "nextSceneId": "scene_end",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 0 }
+        },
+        {
+          "text": "Replay the moment in your mind with a smile, then finish.",
+          "nextSceneId": "scene_end",
+          "effects": { "kindness": 0, "bravery": 0, "patience": 0 }
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending_kind",
+      "condition": "kindness >= 4",
+      "text": "You chose warmth, generosity, and the kind of care that makes a home feel like a hug. The snowglobe’s mailbox flag stays proudly raised, and you get the clear sense that {{playerWish}} has been sent to Santa with extra sparkle and a friendly note. Merry Christmas, {{playerName}}—your wish is on its way, wrapped in kindness."
+    },
+    {
+      "id": "ending_brave",
+      "condition": "bravery >= 4",
+      "text": "You stepped up, tried the tricky things, and didn’t let awkward challenges boss you around. The snowglobe gives three confident “ding!” sounds, like it’s awarding you a tiny medal made of glitter and determination. Merry Christmas, {{playerName}}—your wish, {{playerWish}}, has been sent to Santa with a bold, bright stamp."
+    },
+    {
+      "id": "ending_patient",
+      "condition": "patience >= 4",
+      "text": "You slowed down, noticed the details, and let good moments become clear instead of rushed. The snow inside the globe settles into a perfectly peaceful scene, as if it’s saying: This is how wishes travel best. Merry Christmas, {{playerName}}—your wish, {{playerWish}}, has been sent to Santa with calm, careful magic."
+    },
+    {
+      "id": "ending_balanced",
+      "condition": "kindness < 4 && bravery < 4 && patience < 4",
+      "text": "You followed the clues, made thoughtful choices, and brought your own cozy style to the adventure. The snowglobe gives a satisfied “ding,” and the DELIVERED stamp glows one last time—{{playerWish}} has been sent to Santa, no doubt about it. Merry Christmas, {{playerName}}—may your wish return to you in wonderful ways."
+    }
+  ]
+}
