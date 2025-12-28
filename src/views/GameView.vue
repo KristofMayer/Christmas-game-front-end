@@ -35,6 +35,12 @@ const router = useRouter();
 const playerName = computed(() => localStorage.getItem("playerName") || "");
 const playerWish = computed(() => localStorage.getItem("playerWish") || "");
 
+function renderText(raw) {
+    return String(raw ?? "")
+        .replaceAll("{{playerName}}", playerName.value || "player")
+        .replaceAll("{{playerWish}}", playerWish.value || "your wish");
+}
+
 const vars = reactive({
     kindness: game.variables.kindness,
     bravery: game.variables.bravery,
