@@ -31,7 +31,9 @@ import { useRouter } from "vue-router";
 import game from "../game/game.json";
 
 const router = useRouter();
-const playerName = localStorage.getItem("playerName") || "player";
+//const playerName = localStorage.getItem("playerName") || "player";
+const playerName = computed(() => localStorage.getItem("playerName") || "");
+const playerWish = computed(() => localStorage.getItem("playerWish") || "");
 
 const vars = reactive({
     kindness: game.variables.kindness,
