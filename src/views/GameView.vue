@@ -32,13 +32,15 @@ import game from "../game/game.json";
 
 const router = useRouter();
 //const playerName = localStorage.getItem("playerName") || "player";
-const playerName = computed(() => localStorage.getItem("playerName") || "");
-const playerWish = computed(() => localStorage.getItem("playerWish") || "");
 
-function renderText(raw) {
-    return String(raw ?? "")
-        .replaceAll("{{playerName}}", playerName.value || "player")
-        .replaceAll("{{playerWish}}", playerWish.value || "your wish");
+const playerName = ref(localStorage.getItem("playerName") || "player");
+const playerWish = ref(localStorage.getItem("playerWish") || "");
+
+// Replace both styles: {{playerName}} and {playerName} (and whitespace variants)
+function interpolate(str = "") {
+    return String(str)
+        .replace(/{{\s*playerName\s*}}|{\s*playerName\s*}/g, playerName.value)
+        .replace(/{{\s*playerWish\s*}}|{\s*playerWish\s*}/g, playerWish.value);
 }
 
 const vars = reactive({
